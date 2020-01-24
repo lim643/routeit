@@ -1,0 +1,312 @@
+@charset "UTF-8";
+
+/* Standard Header */
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color:#E0E1DD;
+    font-family:Futura;
+}
+
+.page{
+	display:flex;
+	flex-direction:column;
+}
+
+#logo{
+  	justify-content:flex-start;
+	overflow: hidden;
+	font-size:500%;
+  	color:#E0E1DD;
+  	font-family:Futura;
+  	padding-left:10px;
+  	z-index: 1;
+}
+
+#interactive{
+	display:flex;
+	flex-direction:row;
+	align-items: flex-end;
+	background-color:#778DA9;
+	margin: 0;
+	padding: 5px;
+	order:1;	
+}
+
+#shadow{
+	width: 100%;
+	background-color:#415A77;
+	padding-top: 7.5px;
+	padding-bottom: 7.5px;
+	order:2;
+}
+
+#btn{
+	display: flex;
+	margin-left: auto;
+	flex-direction:row;
+}
+
+#loginbtn{
+	color:#E0E1DD;
+	font-size:50px;
+	z-index:2;
+	flex-basis: 20%;
+	padding: 20px;
+	font-family:Futura;
+}
+
+#regbtn{
+	color:#E0E1DD;
+	font-size:50px;
+	z-index:2;
+	flex-basis: 20%;
+	padding: 20px;
+	font-family:Futura;
+}
+
+/* Goole Maps */
+#map {
+	z-index: 1;
+	position: absolute;
+	top: 12.1%;
+	height: 90%;
+	width: 100%;
+}
+
+/* table of searches */
+#POITable {
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 16%;
+	left: 72%;
+	width: 26%;
+	max-height: 65%;
+	border-radius: 6px;
+    border-style: hidden;
+    border-collapse: collapse;
+    box-shadow: 0 0 0 1px black;
+    font-family: Futura;
+	font-size: 26px;
+	color: #505050;
+	background-color: #F8F8F8;
+	overflow:auto;
+}
+
+/* table body */
+tbody {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	overflow: auto;
+}
+
+td{
+	vertical-align: middle;
+}
+
+/* table body rows */
+tbody tr {
+	display: flex;
+	flex-direction: row;
+	border-bottom: 1px solid #686868;
+	padding: 12px;
+	height: 100px;
+	vertical-align: middle;
+}
+
+#building{
+	order:4;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center;
+}
+
+#back{
+	font-family:Futura;
+	color:#E0E1DD;
+	background-color:#415A77;
+	font-size:175%;
+	padding: 10px 15px;
+	text-align: center;
+	margin: auto;
+	margin-right: 100px;
+	width: 200px;
+	border-radius:60px;
+	cursor:pointer;
+	opacity: 0.85;
+	order: 2;
+	z-index: 10;
+	position: absolute;
+	bottom: 5%;
+    left: 75%;
+}
+#complete{
+	font-family:Futura;
+	color:#E0E1DD;
+	background-color:#415A77;
+	font-size:175%;
+	padding: 10px 15px;
+	text-align: center;
+	margin: auto;
+	margin-right: 100px;
+	width: 200px;
+	border-radius:60px;
+	cursor:pointer;
+	opacity: 0.85;
+	order: 2;
+	z-index: 10;
+	position: absolute;
+	bottom: 7.55%;
+    left: 87%;
+}
+#saveTrip{
+	font-family:Futura;
+	color:#E0E1DD;
+	background-color:#415A77;
+	font-size:175%;
+	padding: 10px 15px;
+	text-align: center;
+	margin: auto;
+	margin-right: 100px;
+	width: 200px;
+	border-radius:60px;
+	cursor:pointer;
+	opacity: 0.85;
+	order: 2;
+	z-index: 10;
+	position: absolute;
+	bottom: 7.5%;
+    left: 87%;
+}
+
+#POITable{
+	order: 1;
+}
+
+/* "X" button */
+#POITable button {
+	z-index: 3;
+	position: relative;
+	top: -8px;
+	left: 20%;
+	border-radius: 20px;
+	font-family: AvenirNext-Regular;
+	font-size: 14px;
+	background-color: #F8F8F8;
+	border: none;
+}
+
+/* Onclick */
+#POITable button:focus {
+	outline: none;
+}
+
+/* "X" button hover */
+#POITable button:hover {
+	background-color: #DCDCDC;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #A9A9A9;
+  border-radius: 10px;
+}
+
+/* Generate Trip button */
+#GenerateTrip {
+	z-index: 3;
+	position: absolute;
+	top: 86%;
+	left: 80%;
+	height: 38px;
+	width: 150px;
+	border-radius: 8px;
+	font-family: Futura;
+	font-size: 17px;
+	color: #505050;
+	background-color: #F8F8F8;
+}
+
+/* Generate Trip hover */
+#GenerateTrip:hover {
+	cursor: pointer;
+	background-color: #E8E8E8;
+}
+
+a:link {
+  color: #E0E1DD;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #E0E1DD;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #E0E1DD;
+  text-decoration: none;
+}
+
+a:active {
+  color: #E0E1DD;
+  text-decoration: none;
+}
+
+/* Info Window Pop Up */
+.gm-style-iw + button {
+	display: none;
+}
+
+/* Save Trip Pop Up */
+.fullscreen-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(90, 90, 90, 0.5);
+  z-index: 9999;
+}
+
+#popdiv {
+  height: 150px;
+  width: 300px;
+  background-color: #F8F8F8;
+  position: fixed;
+  top: 40%;
+  left: 40%;
+  border-radius: 15px;
+}
+
+h1 {
+	text-align: center;
+	font-size: 27px;
+}
+
+#tripName {
+	position: absolute;
+    left: 28%;
+}
+
+#cancel {
+	position: absolute;
+    left: 25%;
+    top: 74%;
+}
+
+#save {
+	position: absolute;
+    left: 60%;
+    top: 74%;
+}

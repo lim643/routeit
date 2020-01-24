@@ -1,0 +1,294 @@
+@charset "UTF-8";
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color:#E0E1DD;
+    font-family:Futura;
+}
+
+.page{
+	display:flex;
+	flex-direction:column;
+}
+
+#logo{
+  	justify-content:flex-start;
+	overflow: hidden;
+	font-size:500%;
+  	color:#E0E1DD;
+  	font-family:Futura;
+  	padding-left:10px;
+  	z-index: 1;
+}
+
+#interactive{
+	display:flex;
+	flex-direction:row;
+	align-items: flex-end;
+	background-color:#778DA9;
+	margin: 0;
+	padding: 5px;
+	order:1;
+	z-index: 5;	
+}
+
+#shadow{
+	width: 100%;
+	background-color:#415A77;
+	padding-top: 7.5px;
+	padding-bottom: 7.5px;
+	order:2;
+	z-index: 5;
+}
+
+/*temporary, until map api is implemented*/
+#background{
+	position: fixed; 
+	top: 0; 
+	left: 0;
+	min-width: 100%;
+	min-height: 100%;
+	background-image: url("images/wallpaper.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: -1;
+}
+
+#btn, #btn2{
+	display: flex;
+	margin-left: auto;
+	flex-direction:row;
+}
+
+#loginbtn{
+	color:#E0E1DD;
+	font-size:50px;
+	z-index:2;
+	flex-basis: 20%;
+	padding: 20px;
+	font-family:Futura;
+}
+
+#regbtn{
+	color:#E0E1DD;
+	font-size:50px;
+	z-index:2;
+	flex-basis: 20%;
+	padding: 20px;
+	font-family:Futura;
+}
+
+.locSearch{
+	order:3;
+	margin-top:225px;
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-end;
+}
+
+form.locSearch input[type=text] {
+  padding: 10px;
+  font-size: 30px;
+  font-family:Futura;
+  border: 1px solid grey;
+  color:#293132;
+  width: 400px;
+  height: 75px;
+  background: #ffffff;
+  opacity: 0.85;
+}
+
+#inputs{
+	display:flex;
+	flex-direction: column;
+	justify-content:center;
+	padding:2%;
+	z-index: 5;
+	
+    position: absolute;
+    left: 1450px;
+    top: 95px;
+}
+
+#start{
+	z-index:4;
+	margin-top:20px;
+	margin-right:20px;
+	/* order: 1; */
+	padding: 10px;
+	font-size: 30px;
+  font-family:Futura;
+  border: 0px;
+  color:#293132;
+  width: 400px;
+  height: 75px;
+  background-color:rgba(255, 255, 255, 0.85);
+  box-shadow: 5px 5px 10px grey;
+}
+
+#dest{
+	z-index:4;
+	margin-top:20px;
+	margin-right:20px;
+	/* order: 2; */
+	padding: 10px;
+	font-size: 30px;
+  font-family:Futura;
+  border: 0px;
+  color:#293132;
+  width: 400px;
+  height: 75px;
+  background-color:rgba(255, 255, 255, 0.85);
+  box-shadow: 5px 5px 10px grey;
+}
+
+#search{
+	font-family:Futura;
+	color:#E0E1DD;
+	background-color:#415A77;
+	font-size:175%;
+	padding: 10px 15px;
+	text-align: center;
+	margin: auto;
+	margin-right: 100px;
+	width: 200px;
+	border-radius:60px;
+	cursor:pointer;
+	opacity: 0.85;
+	order: 3;
+	z-index: 10;
+	top: 35%;
+    right: 1.5%;
+    position: absolute;
+}
+
+/* *************************START OF Google Maps CSS STUFF************************ */
+#map {
+	position: absolute;
+	top: 12.1%;
+	height: 949px;
+	width: 100%;
+	z-index: 1;
+}
+/* *************************END OF Google Maps CSS STUFF ************************* */
+
+
+a:link {
+  color: #E0E1DD;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #E0E1DD;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #E0E1DD;
+  text-decoration: none;
+}
+
+a:active {
+  color: #E0E1DD;
+  text-decoration: none;
+}
+
+input,
+textarea,
+select {
+    outline: 0;
+}
+
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus {
+    border: groove 2px #E0E1DD;
+}
+
+/*************** POPUP ************/
+#description {
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+#infowindow-content .title {
+  font-weight: bold;
+}
+
+#infowindow-content {
+  display: none;
+}
+
+#map #infowindow-content {
+  display: inline;
+}
+
+.pac-card {
+  margin: 10px 10px 0 0;
+  border-radius: 2px 0 0 2px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  outline: none;
+  width: 400px;
+  height: 45px;
+  border: 1px solid grey;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  background-color: (255, 255, 255, 0.85);
+  font-family: Futura;
+}
+
+.pac-container {
+  font-size: 30px;
+  font-family: Futura;
+  border: 1px solid grey;
+  color:#293132;
+  /* width: 400px; */
+  /* height: 185px; */
+  padding-bottom: 12px;
+  margin-right: 12px;
+  background-color: (255, 255, 255, 0.95);
+}
+
+.pac-controls {
+  display: inline-block;
+  padding: 5px 11px;
+}
+
+.controls{
+	z-index:5;
+}
+
+.pac-controls label {
+  font-family: Futura;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+#pac-input {
+  background-color: #fff;
+  font-family: Futura;
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 12px;
+  padding: 0 11px 0 13px;
+  text-overflow: ellipsis;
+  width: 400px;
+}
+
+#pac-input:focus {
+  border-color: #4d90fe;
+}
+
+#title {
+  color: #fff;
+  background-color: #4d90fe;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 6px 12px;
+}
+#target {
+  width: 345px;
+}

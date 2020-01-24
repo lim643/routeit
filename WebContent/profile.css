@@ -1,0 +1,209 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color:#E0E1DD;
+    font-family:Futura;
+}
+
+.page{
+	display:flex;
+	flex-direction:column;
+}
+
+#logo{
+  	justify-content:flex-start;
+	overflow: hidden;
+	font-size:500%;
+  	color:#E0E1DD;
+  	font-family:Futura;
+  	padding-left:10px;
+  	z-index: 1;
+}
+
+#interactive{
+	display:flex;
+	flex-direction:row;
+	align-items: flex-end;
+	background-color:#778DA9;
+	margin: 0;
+	padding: 5px;
+	order:1;	
+}
+
+#shadow{
+	width: 100%;
+	background-color:#415A77;
+	padding-top: 7.5px;
+	padding-bottom: 7.5px;
+	order:2;
+	z-index: 5;
+}
+
+#background{
+	position: fixed; 
+	top: 0; 
+	left: 0;
+	min-width: 100%;
+	min-height: 100%;
+	background-image: url("images/wallpaper.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: -1;
+}
+
+#header{
+	color:#778DA9;
+	position:absolute;
+	top:22.5%;
+	left:42.5%;
+	font-size:500%;
+}
+
+form.UserValues input[type=text] {
+  font-family:Futura;
+  color:#293132;
+  padding:10px;
+}
+
+
+#loginbtn{
+	color:#E0E1DD;
+	font-size:50px;
+	z-index:2;
+	position: absolute;
+	top:4%;
+	right:17%;
+	font-family:Futura;
+}
+
+#regbtn{
+	color:#E0E1DD;
+	font-size:50px;
+	z-index:2;
+	position: absolute;
+	top:4%;
+	right:5%;
+	font-family:Futura;
+}
+table {
+	width: 50%;
+	max-height: 70%;
+ 	margin-left: 25%;
+	margin-right: 25%;
+	margin-top: 10%;
+	text-align: center;
+	float: left;
+	border-radius: 10px;
+	border: 1px solid #ffffff;
+	border-collapse: collapse;
+	background: #ededed;
+	font-family: Futura;
+	font-size: 300%;
+	padding: 15px;
+}
+
+/* th{
+	background-color: #778DA9;
+	color: white;
+	border-bottom:1px solid #ffffff;
+	border-radius: 10px;
+	font-family: Futura;
+	font-size: 140%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+} */
+#headContainer{
+	background-color: #778DA9;
+	color: white;
+	border-bottom:1px solid #ffffff;
+	border-radius: 10px;
+	font-family: Futura;
+	font-size: 140%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	width: 100%;
+	padding-left: 0;
+}
+#tableHead{
+	width:100%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+/*clickable trip name */
+#tripName{
+	background: none;
+	border: none;
+	font-size: 100%;
+}
+
+#Xbutton {
+	z-index: 3;
+	position: relative;
+	top: -8px;
+	border-radius: 20px;
+	font-family: AvenirNext-Regular;
+	font-size: 14px;
+	background-color: #F8F8F8;
+	border: none;
+}
+
+#publicButton{
+	z-index: 3;
+	margin-top: 20px;
+	margin-right: 10px;
+	float: right;
+	border-radius: 5px;
+	font-family: AvenirNext-Regular;
+	font-size: 14px;
+	background-color: #F8F8F8;
+	border: none;
+}
+
+#toPublicOrPrivate {
+	z-index: 5;
+    position: absolute;
+    top: 20.5%;
+    right: 13%;
+    width: 210px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 30px;
+    background: #778DA9;
+    border-radius: 5px;
+}
+
+td, tr{
+	border-bottom:1px solid #ffffff;
+	border-radius: 10px;
+	padding-left: 1%;
+}
+tbody tr{
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+}
+tbody th{
+	text-align: center;
+	font-weight: normal;
+}
+
+a:link {
+  color: #E0E1DD;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #E0E1DD;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #E0E1DD;
+  text-decoration: none;
+}
+
+a:active {
+  color: #E0E1DD;
+  text-decoration: none;
+}

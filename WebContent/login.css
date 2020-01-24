@@ -1,0 +1,178 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color:#E0E1DD;
+    font-family:Futura;
+}
+
+.page{
+	display:flex;
+	flex-direction:column;
+}
+
+#logo{
+  	justify-content:flex-start;
+	overflow: hidden;
+	font-size:500%;
+  	color:#E0E1DD;
+  	font-family:Futura;
+  	padding-left:10px;
+  	z-index: 1;
+}
+
+#interactive{
+	display:flex;
+	flex-direction:row;
+	align-items: flex-end;
+	background-color:#778DA9;
+	margin: 0;
+	padding: 5px;
+	order:1;	
+}
+
+#shadow{
+	width: 100%;
+	background-color:#415A77;
+	padding-top: 7.5px;
+	padding-bottom: 7.5px;
+	order:2;
+	z-index: 5;
+}
+
+#background{
+	position: fixed; 
+	top: 0; 
+	left: 0;
+	min-width: 100%;
+	min-height: 100%;
+	background-image: url("images/wallpaper.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: -1;
+}
+
+#title{
+	color:#778DA9;
+	position:absolute;
+	top:22.5%;
+	left:45%;
+	font-size:500%;
+}
+
+#usrError{
+	position:absolute;
+	top:40%;
+	left:55%;
+	color:red;
+	size:20px;	
+	z-index:3;
+}
+
+#pwError{
+	position:absolute;
+	top:50%;
+	left:55%;
+	color:red;
+	size:20px;	
+	z-index:3;
+}
+
+#user{
+	position:absolute;
+	top:37.5%;
+	left:35%;
+	padding: 10px;
+	font-size: 40px;
+	color:#474044;
+	border: 0;
+  	outline: 0;
+  	background: transparent;
+	border-bottom: 1px solid grey;
+	width: 575px;
+	height: 50px;
+}
+
+#pass{
+	position:absolute;
+	top:50%;
+	left:35%;
+	padding: 10px;
+	font-size: 40px;
+	border: 0;
+  	outline: 0;
+  	background: transparent;
+	border-bottom: 1px solid grey;
+	width: 575px;
+	height: 50px;
+}
+
+input[type="password"] {
+    font-family: Futura;
+}
+
+form.UserValues input[type=text] {
+  font-family:Futura;
+  color:#293132;
+  padding:10px;
+}
+
+#login{
+	font-family:Futura;
+	color:#ffffff;
+	background-color:#415A77;
+	font-size:175%;
+	position: absolute;
+	top:60%;
+	left:45%;
+	padding: 10px 15px;
+	text-align: center;
+	margin: 10px 2px;
+	width: 200px;
+	border-radius:60px;
+	cursor:pointer;
+	background-color:rgba(65, 90, 119, 0.7);
+}
+
+#btn{
+	display: flex;
+	margin-left: auto;
+	flex-direction:row;
+}
+
+#loginbtn{
+	color:#E0E1DD;
+	font-size:50px;
+	z-index:2;
+	flex-basis: 20%;
+	padding: 20px;
+	font-family:Futura;
+}
+
+#regbtn{
+	color:#E0E1DD;
+	font-size:50px;
+	z-index:2;
+	flex-basis: 20%;
+	padding: 20px;
+	font-family:Futura;
+}
+
+a:link {
+  color: #E0E1DD;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #E0E1DD;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #E0E1DD;
+  text-decoration: none;
+}
+
+a:active {
+  color: #E0E1DD;
+  text-decoration: none;
+}

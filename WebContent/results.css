@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+#logo {
+	padding-top: 15px;
+	padding-left: 20px;
+	overflow: hidden;
+	background-color: #778DA9;
+	font-size: 500%;
+	position: absolute;
+  	top: 0;
+  	left: 0;
+  	height: 10%;
+  	width: 100%;
+  	color: #E0E1DD;
+  	font-family: Futura;
+  	z-index: 1;
+}
+
+#logosh {
+	padding-top: 7.5px;
+	padding-bottom: 7.5px;
+	position: absolute;
+  	top: 0;
+  	left: 0;
+	z-index: 0;
+	width: 100%;
+	background-color: #415A77;
+	height: 11%;
+}
+
+#loginbtn {
+	color: #E0E1DD;
+	font-size: 50px;
+	z-index: 2;
+	position: absolute;
+	top: 4%;
+	right: 17%;
+	font-family: Futura;
+}
+
+#regbtn {
+	color: #E0E1DD;
+	font-size: 50px;
+	z-index: 2;
+	position: absolute;
+	top: 4%;
+	right: 5%;
+	font-family: Futura;
+}
+
+/* table of searches */
+#POITable {
+	z-index: 3;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 16%;
+	left: 72%;
+	width: 26%;
+	max-height: 65%;
+	border-radius: 6px;
+    border-style: hidden;
+    border-collapse: collapse;
+    box-shadow: 0 0 0 1px black;
+    font-family: Futura;
+	font-size: 26px;
+	color: #505050;
+	background-color: #F8F8F8;
+	overflow: auto;
+}
+
+/* table body */
+tbody {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	overflow: auto;
+}
+
+/* table body rows */
+tbody tr {
+	display: flex;
+	flex-direction: row;
+	border-bottom: 1px solid #686868;
+	padding: 8px;
+	padding-bottom: 40px;
+	height: 200px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #A9A9A9;
+  border-radius: 10px;
+}
+
+/* Generate Trip button */
+#SaveTrip {
+	position: absolute;
+	top: 86%;
+	left: 80%;
+	height: 38px;
+	width: 150px;
+	border-radius: 8px;
+	font-family: Futura;
+	font-size: 17px;
+	color: #505050;
+	background-color: #F8F8F8;
+}
+
+#SaveTrip:hover {
+	cursor: pointer;
+	background-color: #E8E8E8;
+}
+
+a:link {
+  color: #E0E1DD;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #E0E1DD;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #E0E1DD;
+  text-decoration: none;
+}
+
+a:active {
+  color: #E0E1DD;
+  text-decoration: none;
+}
